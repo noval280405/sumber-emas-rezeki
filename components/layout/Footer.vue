@@ -143,7 +143,7 @@ const guidance = [
 
 <style scoped>
 .boutique-footer {
-  background: #27241f;
+  background: #211710;
   color: #e8e0d2;
   padding: 0 0 24px;
 }

@@ -1,20 +1,20 @@
 @import 'tailwindcss';
 @theme {
-  --color-ivory: #faf7f0;
-  --color-gold: #b8924a;
-  --color-brown: #302a25;
+  --color-ivory: #f4eadb;
+  --color-gold: #95651f;
+  --color-brown: #281b15;
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', Arial, sans-serif;
 }
 :root {
-  --ivory: #faf7f0;
+  --ivory: #f4eadb;
   --white: #fff;
-  --gold: #b8924a;
-  --light-gold: #d7be89;
-  --beige: #e9dfcf;
-  --brown: #302a25;
-  --muted: #756d64;
-  --border: #e8e1d7;
+  --gold: #95651f;
+  --light-gold: #dfbd78;
+  --beige: #e5d1b5;
+  --brown: #281b15;
+  --muted: #665444;
+  --border: #d9c5a9;
   --green: #3d7a5b;
 }
 * {
@@ -26,7 +26,7 @@ html {
 }
 body {
   margin: 0;
-  background: #fff;
+  background: #fffcf6;
   color: var(--brown);
   font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   font-size: 13px;
@@ -230,7 +230,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(250, 247, 240, 0.95);
+  background: rgba(248, 240, 228, 0.97);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   transition:
@@ -710,7 +710,7 @@ a:hover {
   color: #947238;
 }
 .category-section {
-  background: #f7f4ee;
+  background: #ebdcc6;
 }
 .category-grid {
   display: grid;
@@ -758,7 +758,7 @@ a:hover {
 .gold-price-card {
   padding: 27px;
   border: 1px solid var(--border);
-  background: linear-gradient(125deg, #faf8f2, #fff);
+  background: linear-gradient(125deg, #f2e4cc, #fffaf2);
   position: relative;
 }
 .gold-price-card > div {
@@ -991,7 +991,7 @@ dd {
 .buyback-banner {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  background: #eee7db;
+  background: #e3c9a4;
   padding: 55px 65px;
   gap: 45px;
   overflow: hidden;
@@ -1072,7 +1072,7 @@ dd {
   font-size: 24px;
 }
 .testimonials {
-  background: #f8f5ee;
+  background: #f0e3d0;
 }
 .testimonials .section-heading {
   justify-content: center;
@@ -1139,7 +1139,7 @@ dd {
   justify-content: center;
   text-align: center;
   padding: 25px;
-  background-color: #ede8dc;
+  background-color: #e4d1b3;
   background-image:
     linear-gradient(32deg, transparent 44%, #fff8 45%, #fff8 46%, transparent 47%),
     linear-gradient(100deg, transparent 35%, #fff8 36%, #fff8 37%, transparent 38%),
@@ -1393,7 +1393,7 @@ details[open] .plus {
   padding: 5px 12px;
 }
 .notice {
-  background: #f8f5ee;
+  background: #f0e3d0;
   border-left: 2px solid #b8924a80;
   color: #746750;
   padding: 13px 16px;
@@ -3517,4 +3517,102 @@ tbody tr:last-child td {
 }
 .advanced-filter-fields > label {
   margin-bottom: 15px;
+}
+
+/* Espresso and champagne accents: richer contrast for the editorial sections. */
+.hero-copy,
+.wedding-banner-copy,
+.final-cta,
+.calculator-result {
+  --gold: #dfbd78;
+  --muted: #d5c3ad;
+  background: #302018;
+  color: #fff4e2;
+}
+.hero-copy {
+  background: linear-gradient(135deg, #36251b, #241912);
+}
+.hero-copy .hero-eyebrow,
+.hero-copy .hero-bottom,
+.wedding-banner-copy .eyebrow,
+.final-cta .eyebrow,
+.calculator-result .eyebrow,
+.calculator-result .result-label {
+  color: #dfbd78;
+}
+.hero-copy > p,
+.hero-copy .hero-bottom p,
+.wedding-banner-copy > p:not(.eyebrow),
+.wedding-banner-copy > small,
+.final-cta > p:not(.eyebrow),
+.calculator-result > .small {
+  color: #d5c3ad;
+}
+.hero-copy .text-link {
+  color: #f0d6a7;
+  border-color: #ba914f;
+}
+.hero-copy .button,
+.final-cta .button:not(.secondary),
+.calculator-result .button {
+  background: #d9b56f;
+  border-color: #d9b56f;
+  color: #261a12;
+  font-weight: 600;
+}
+.hero-copy .button:hover,
+.final-cta .button:not(.secondary):hover,
+.calculator-result .button:hover {
+  background: #efd098;
+  border-color: #efd098;
+}
+.wedding-banner-copy .button.secondary,
+.final-cta .button.secondary {
+  border-color: #b58d4e;
+  color: #f1d8ac;
+}
+.wedding-banner-copy .button.secondary:hover,
+.final-cta .button.secondary:hover {
+  background: #dfbd78;
+  color: #261a12;
+}
+.calculator-result dl {
+  border-color: #795b3d;
+}
+.hero-copy :focus-visible,
+.wedding-banner-copy :focus-visible,
+.final-cta :focus-visible,
+.calculator-result :focus-visible {
+  outline-color: #efd098;
+}
+.trust-strip {
+  background: #ead7b9;
+  color: #4a3523;
+  border-color: #d0b68c;
+}
+.trust-strip > i {
+  background: #c4a374;
+}
+.navbar.scrolled {
+  background: #fff9ee;
+}
+.gold-price-card {
+  border-color: #c9aa76;
+  box-shadow: 0 4px 18px #57361506;
+}
+.gold-price-card strong {
+  color: #694714;
+}
+.product-image {
+  background: #e8d6ba;
+}
+.product-price {
+  color: #78501b;
+}
+.buyback-banner .eyebrow,
+.buyback-banner em {
+  color: #80551d;
+}
+.final-cta {
+  border-top: 1px solid #b58d4e;
 }

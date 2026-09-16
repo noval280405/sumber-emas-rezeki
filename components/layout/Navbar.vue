@@ -39,10 +39,7 @@ useModal(mobileOpen, () => {
 })
 </script>
 <template>
-  <div class="announcement">
-    Perhiasan indah. Cerita berharga. <span>Temukan pilihan untuk setiap momen.</span
-    ><UiIcon name="diamond" :size="12" />
-  </div>
+  <LayoutAnnouncementBar />
   <header
     :class="['navbar', { scrolled, 'on-home': route.path === '/' }]"
     @keydown.esc="megaOpen = false"
