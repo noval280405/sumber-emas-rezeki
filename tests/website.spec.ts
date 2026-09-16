@@ -113,6 +113,7 @@ test('catalogue search, all filter types, reset, and all sorts', async ({ page }
   await expect(cards).toHaveCount(3)
   await filter.getByLabel('Harga', { exact: true }).selectOption('2000000-5000000')
   await expect(cards).toHaveCount(2)
+  await filter.getByRole('button', { name: 'Filter lainnya' }).click()
   await filter.getByLabel('Berat', { exact: true }).selectOption('2-5')
   await expect(cards).toHaveCount(2)
   await filter.getByLabel('Gender', { exact: true }).selectOption('Wanita')
